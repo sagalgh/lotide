@@ -37,7 +37,7 @@ const middle = function (arr){
   return newArray
 }
 
-console.log(middle([1, 2, 3, 4,5,6,7,8,9, 101, 42])) // => [2, 3]
+console.log(middle([1, 2, 3, 4,5,6,7,8,9, 101, 42])) // 
 console.log(middle([1, 2, 3, 4, 5, 6]))// => [3, 4]
 
 
