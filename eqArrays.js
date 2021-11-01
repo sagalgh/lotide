@@ -5,6 +5,13 @@
 
 /* Implement a function eqArrays which takes in two arrays 
 and returns true or false, based on a perfect match. */
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    return `✅✅✅  Assertion Passed: ${actual} === ${expected}`;
+  } else {
+    return `🔴🔴🔴 Assertion Failed: ${actual} !== ${expected} `;
+  }
+};
 const eqArrays = function (arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -16,8 +23,5 @@ const eqArrays = function (arr1, arr2) {
   }
   return true
 }
+module.exports = eqArrays;
 
-
-
-console.log(`new:`+ eqArrays([1, 2], [1, 2, 3]))
-console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true)); // => should PASS
