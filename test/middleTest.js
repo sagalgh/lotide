@@ -5,7 +5,7 @@ describe("#middle", () => {
   it("if array is even, should return two values. Return 3, 4 for [1, 2, 3, 4, 5, 6]", () => {
     assert.deepEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
 });
-  it("if array is even, should return two values. Return 3, 4 for [1, 2, 3, 4, 5, 6]", () => {
+  it("if array is odd, should return one value. Return 4 for [1, 2, 3, 4, 5, 6,7]", () => {
     assert.deepEqual(middle([1, 2, 3, 4, 5, 6,7]), [4]);
   })
 
